@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    font-family: poppins;
+}
+.nav-bar{
+    height: 20px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile{
+    display: none;
+}
+
+
+.nav{
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 1.3em;   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(2,7,28,0.5),rgba(2,7,28,0.5)),url(./assets/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 6px 10px 25px rgba(0,0,0,0.8);
+}
+h6{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 20px;
+    text-shadow: 6px 10px 25px rgba(0,0,0,0.8);
+}
+
+.btn-contact{
+    margin: 30px;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    font-family: poppins;
+    background-color: rgba(2,7,28,0.5);
+    border: solid 2px white;
+    color: white;
+}
+
+.btn-contact:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid white;
+    transition: 1s;
+}
+
+.about{
+    height: 55%;
+    background-color: #eeeeff;
+    padding: 50px;
+}
+
+.about-con{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about h2, .skills>h2, .projects>h2, .test>h2, .contact>h2{
+    margin: 0;
+    padding: 20px;
+    font-size: 2.3em;
+    text-align: center;
+}
+.about p{
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.skills{
+    padding: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.sub-skill>h2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.out-con{
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    padding: 50px;
+    background-color: #eeeeff;
+}
+
+.pro-con{
+    margin: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+}
+
+.pro-con img{
+    border-radius: 10px;
+    width: 75%;
+    height: 200px;
+}
+
+.pro-name{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.pro-title a{
+    font-style: italic;
+    color: blue;
+}
+.pro-title a:hover{
+    text-decoration: underline;
+}
+
+.test{
+    background-color: #ecebe4;
+    padding: 50px;
+}
+
+.test-con{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+    margin: 40px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.box img{
+    border: 3px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+.contact{
+    background-color: #eeeeff;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+
+.contact-img{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px;
+    align-items: center;
+}
+.contact-img div{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+@media(max-width: 767px){
+    nav{
+        display: none;
+    }
+    .nav-bar{
+        padding-right: 5px;
+    }
+    .menu{
+        display: flex;
+    }
+    .hero h1{
+        font-size: 3em;
+        margin: 10px;
+    }
+
+    .about-con{
+        display: block;
+        padding: 30px;
+    }
+    .about-con div{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .about-con p{
+        font-size: 1.2em;
+    }
+    .about-con img{
+        height: 100px !important;
+
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pro-con{
+        grid-template-columns: 1fr;
+    }
+    .test-con{
+        flex-wrap: wrap;
+    }
+    .contact-img{
+        flex-wrap: wrap;
+    }
+}
